@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import TextInput from "../components/TextInput";
-import SelectInput from "../components/SelectInput";
+import TextInput from "./components/TextInput";
+import SelectInput from "./components/SelectInput";
 import { BiErrorCircle } from "react-icons/bi";
-import apiEndpoints from "../services/api";
-import AuthRequests from "../services/requests";
+import apiEndpoints from "./services/api";
+import AuthRequests from "./services/requests";
 import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
@@ -85,7 +85,7 @@ const Signup = () => {
         setIsLoading(false);
       }
     } else {
-      console.log("Form is invalid. Please correct the errors.");
+      console.error("Form is invalid. Please correct the errors.");
     }
   }
 

@@ -1,7 +1,7 @@
 import { useRoutes } from "react-router-dom";
-import Home from "../pages/Home";
-import SignIn from "../pages/SignIn";
-import Profile from "../pages/Profile";
+import Home from "../Home";
+import SignIn from "../SignIn";
+import Profile from "../Profile";
 
 const AllRoutes = () => {
     const routesObj = useRoutes([

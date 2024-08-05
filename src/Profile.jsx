@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import AuthRequests from '../services/requests';
+import AuthRequests from './services/requests';
 import { FaEnvelope, FaPhone, FaSpinner, FaUser, FaWallet } from 'react-icons/fa6';
 
 const Profile = () => {

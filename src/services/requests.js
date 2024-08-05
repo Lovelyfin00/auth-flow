@@ -42,7 +42,6 @@ async function makeRequest(
     userProfile: () => {
         const endpoint = apiEndpoints.userProfile;
         const token = window.localStorage.getItem("token");
-        console.log(token);
         
         return makeRequest(endpoint, "GET", null, {
             Authorization: `Bearer ${token}`,
@@ -51,7 +50,6 @@ async function makeRequest(
     myWallet: () => {
         const endpoint = apiEndpoints.myWallet;
         const token = window.localStorage.getItem("token");
-        console.log(token);
         
         return makeRequest(endpoint, "GET", null, {
             Authorization: `Bearer ${token}`,
